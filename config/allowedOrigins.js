@@ -6,6 +6,7 @@ const allowedOrigins = [
   "https://getform.io/f/",
   "http://localhost:9999",
   "http://localhost:9678",
+  "https://tastebook-server.vercel.app/",
 ];
 
 module.exports = allowedOrigins;
