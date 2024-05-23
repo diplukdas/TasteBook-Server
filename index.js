@@ -7,11 +7,17 @@ const credentials = require("./middleware/credentials");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const connectDB = require("./db/conn");
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+};
 
 const app = express();
 const port = process.env.PORT || 5000;
 
 // cors middleware
+app.use(cors(corsConfig));
 app.use(credentials);
 app.use(cors(corsOptions));
 
