@@ -7,6 +7,7 @@ const allowedOrigins = [
   "http://localhost:9999",
   "http://localhost:9678",
   "https://tastebook-server.vercel.app/",
+  "https://tastebook-client.vercel.app/",
   "https://vercel.com/",
   "https://vercel.app/",
 ];
